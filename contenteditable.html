@@ -1,0 +1,16 @@
+<head>
+  <title>contenteditable</title>
+</head>
+
+<body>
+  {{> contenteditable}}
+</body>
+
+<template name="contenteditable">
+  <h1>Content Editable Test</h1>
+  <div class="cr-note">
+     {{#with content}}
+        <p contenteditable="true">{{{note}}}</p>
+     {{/with}}
+  </div>
+</template>
